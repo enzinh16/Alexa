@@ -1,0 +1,98 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "sistema",
+            "intents": [
+                {
+                    "name": "CurrentWeatherIntent",
+                    "slots": [],
+                    "samples": [
+                        "qual é o clima",
+                        "me diga o clima",
+                        "como está o tempo hoje"
+                    ]
+                },
+                {
+                    "name": "ListarDispositivosIntent",
+                    "slots": [],
+                    "samples": [
+                        "me mostre os dispositivos",
+                        "liste os dispositivos por consumo",
+                        "quais são os dispositivos por prioridade"
+                    ]
+                },
+                {
+                    "name": "AlterarPrioridadeIntent",
+                    "slots": [
+                        {
+                            "name": "dispositivo",
+                            "type": "TIPO_DISPOSITIVO"
+                        },
+                        {
+                            "name": "prioridade",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "mude a prioridade do {dispositivo} para {prioridade}",
+                        "altere a prioridade do {dispositivo} para {prioridade}",
+                        "troque a prioridade do {dispositivo} para {prioridade}",
+                        "modifique a prioridade do {dispositivo} para {prioridade}"
+                    ]
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                }
+            ],
+            "types": [
+                {
+                    "name": "TIPO_DISPOSITIVO",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "geladeira"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "lâmpada"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ar condicionado"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "televisão"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ventilador"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
