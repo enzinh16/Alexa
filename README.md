@@ -36,11 +36,10 @@ Este projeto integra a assistente virtual **Alexa** com um servidor Flask em Pyt
 ```
 📁 alexa/
  ┣ 📁 dispositivos/             # Arquivos JSON com dados dos dispositivos
- ┃ ┗ 📄 geladeira.json
+ ┃ ┗ 📄 dispositivos.json
  ┣ 📄 app.py                    # Código principal com intents e endpoints
- ┣ 📄 services.py               # Funções auxiliares para manipular arquivos e API
+ ┣ 📄 functions.py              # Funções auxiliares para manipular arquivos e API
  ┣ 📄 intents.json              # Modelo de interação da Alexa (intents)
- ┣ 📄 requirements.txt          # Dependências do projeto
  ┗ 📁 venv/                     # Ambiente virtual Python (isolado)
 ```
 
@@ -48,7 +47,7 @@ Este projeto integra a assistente virtual **Alexa** com um servidor Flask em Pyt
 
 ## 🔧 Pré-requisitos
 
-- Python 3.6+
+- Python 3.5.4
 - Conta na [Amazon Developer Console](https://developer.amazon.com/)
 - Conta na [OpenWeather](https://openweathermap.org/api) para obter uma API key
 - [ngrok](https://ngrok.com/) instalado para expor o servidor local
@@ -98,15 +97,19 @@ ngrok http 5000
 
 ---
 
-## 💾 Exemplo de JSON de Dispositivo
+## 💾 Exemplo de JSON dos Dispositivos
 
-`dispositivos/geladeira.json`
+`dispositivos/dispositivos.json`
 ```json
 {
-  "nome": "geladeira",
-  "consumo": 150,
-  "prioridade": 2
-}
+"nome": "ar condicionado",
+"consumo": 1500,
+"prioridade": 1
+},
+{
+"nome": "geladeira",
+"consumo": 500,
+"prioridade": 3
 ```
 
 ---
