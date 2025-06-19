@@ -58,14 +58,14 @@ Este projeto integra a assistente virtual **Alexa** com um servidor Flask em Pyt
 
 1. Clone o repositório e entre na pasta:
 ```bash
-git clone https://github.com/seu-usuario/alexa-flask-projeto.git
-cd alexa-flask-projeto
+git clone https://github.com/enzinh16/Alexa.git
+cd Alexa
 ```
 
 2. Crie e ative o ambiente virtual:
 ```bash
-python -m venv venv
-venv\Scripts\activate   # No Windows
+virtualenv venv -p
+venv\Scripts\activate
 ```
 
 3. Instale as dependências:
