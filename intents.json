@@ -1,0 +1,116 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "assistente da goodwe",
+            "intents": [
+                {
+                    "name": "DadosDaPlantaIntent",
+                    "slots": [],
+                    "samples": [
+                        "me diga os dados da planta",
+                        "qual os dados da planta",
+                        "dados da planta"
+                    ]
+                },
+                {
+                    "name": "CurrentWeatherIntent",
+                    "slots": [],
+                    "samples": [
+                        "qual é o clima",
+                        "me diga o clima",
+                        "como está o tempo hoje"
+                    ]
+                },
+                {
+                    "name": "DailyWeatherIntent",
+                    "slots": [],
+                    "samples": [
+                        "previsão do tempo da semana",
+                        "clima da semana",
+                        "como vai ser o clima da semana"
+                    ]
+                },
+                {
+                    "name": "ListarDispositivosIntent",
+                    "slots": [],
+                    "samples": [
+                        "liste os dispositivos",
+                        "me mostre os dispositivos",
+                        "quais dispositivos estão cadastrados"
+                    ]
+                },
+                {
+                    "name": "AlterarPrioridadeIntent",
+                    "slots": [
+                        {
+                            "name": "dispositivo",
+                            "type": "TIPO_DISPOSITIVO"
+                        },
+                        {
+                            "name": "prioridade",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "mude a prioridade do {dispositivo} para {prioridade}",
+                        "altere a prioridade do {dispositivo} para {prioridade}",
+                        "troque a prioridade do {dispositivo} para {prioridade}",
+                        "modifique a prioridade do {dispositivo} para {prioridade}"
+                    ]
+                },
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                }
+            ],
+            "types": [
+                {
+                    "name": "TIPO_DISPOSITIVO",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "geladeira"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "lâmpada"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ar condicionado"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "televisão"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ventilador"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
